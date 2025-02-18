@@ -1,0 +1,99 @@
+body {
+  background-color: #0d0d0d;
+  color: #f3f5f8; /* Light color */
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.dashboard-container {
+  background: linear-gradient(to right, #1D4F91, #0d0d0d);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 20px; /* Add padding to create space around the content */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(56, 47, 188, 0.5);
+  position: relative;
+}
+
+.dashboard-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Slightly opaque overlay */
+  z-index: 1;
+}
+
+.dashboard-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.futuristic-card {
+  background: linear-gradient(to bottom, #1D4F91, #0d0d0d);
+  color: #ffffff; /* White color */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  border: none; /* Remove border */
+  backdrop-filter: blur(5px); /* Add blur effect */
+  border-radius: 10px;
+  box-shadow: none; /* Remove shadow */
+  transition: transform 0.3s ease;
+  width: 100%;
+  margin: 20px 0; /* Add margin to top and bottom */
+}
+
+.futuristic-card:hover {
+  transform: matrix3d(1.01, 0, 0, 0, 0, 1.01, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.futuristic-card-header {
+  color: #f0f3f6; /* Light color */
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.futuristic-card-content {
+  color: #f7f9fa; /* Light color */
+}
+
+.futuristic-typography {
+  color: #f1f3f6; /* Light color */
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.page-banner {
+  background: url('/Users/taylormcwilliam/Downloads/fut4.jpg') no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title {
+  font-size: 2em;
+  color: #ffffff; /* White color for contrast */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+}

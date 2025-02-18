@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #f3f5f8; /* Light color */
+            background-color: #0d0d0d;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal overflow */
+        }
+        .page-banner {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Prevent overflow */
+            padding: 0 20px; /* Add padding to create a buffer */
+        }
+        .page-title {
+            font-size: 2em;
+            color: #ffffff; /* White color for contrast */
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            font-family: 'Orbitron', sans-serif; /* Use Orbitron font */
+        }
+        .dashboard-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 0 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(56, 47, 188, 0.5);
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-banner">
+        <div class="page-title">Ecomm Analytics HUB (user satisfaction)</div>
+    </div>
+    <div id="root" class="dashboard-container">
+        <div class="dashboard-content">
+            <!-- Your React app will be rendered here -->
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
